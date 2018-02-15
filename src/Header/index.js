@@ -1,39 +1,79 @@
 import React from "react";
 import logo from "./logo.svg";
 import {
+  Header,
+  Title,
+  SubTitle,
+  TopBlock,
   Logo,
-  Container,
-  Searchlabel,
+  LogoText,
   Form,
-  DepartureCity,
-  ArrivalCity,
+  ButtonsBlock,
+  Input,
+  Block,
   DepartureDate,
   ArrivalDate,
-  Passengers,
+  Quantity,
+  Span,
   Submit,
-  DateWrapper,
-  Flexwrap,
-  ChangeButton
+  Airport,
+  AirportName,
+  Change
 } from "./styled";
 
 export default () => {
   return (
-    <Container>
-      <Logo src={logo} alt="" />
-      <Searchlabel>Поиск дешевых авиабилетов</Searchlabel>
-      <Form action="#">
-        <Flexwrap>
-          <DepartureCity placeholder="Москва" />
-          <ChangeButton>MOW</ChangeButton>
-        </Flexwrap>
-        <ArrivalCity placeholder="Город прибытия" />
-        <DateWrapper>
-          <DepartureDate value="">Туда</DepartureDate>
-          <ArrivalDate value="">Обратно</ArrivalDate>
-        </DateWrapper>
-        <Passengers>1 пассажир, эконом</Passengers>
-        <Submit>Найти билеты</Submit>
-      </Form>
-    </Container>
+    <Header>
+      <div className="container">
+        <div className="row">
+          <div className="col-xs-12 col-md-12 col-lg-12">
+            <TopBlock>
+              <Logo src={logo} alt="Aviasales" title="Aviasales" />
+              <LogoText>aviasales</LogoText>
+            </TopBlock>
+          </div>
+          <div className="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+            <Title>Поиск дешевых авиабилетов</Title>
+            <SubTitle>Лучший способ купить авиабилеты дешево</SubTitle>
+            <Form action="#" method="post">
+              <Airport>
+                <Input
+                  top
+                  type="text"
+                  name="from"
+                  placeholder="Укажите город"
+                  value="Москва"
+                />
+                <AirportName>MOW</AirportName>
+                <Change />
+              </Airport>
+              <Airport>
+                <Input
+                  greyText
+                  type="text"
+                  name="to"
+                  placeholder="Город прибытия"
+                  value=""
+                />
+              </Airport>
+              <ButtonsBlock>
+                <DepartureDate name="date-go" value="">
+                  Туда
+                </DepartureDate>
+                <ArrivalDate name="date-out" value="">
+                  Обратно
+                </ArrivalDate>
+              </ButtonsBlock>
+              <Quantity>
+                1 пассажир,&nbsp;<Span>эконом</Span>
+              </Quantity>
+              <Block>
+                <Submit type="submit">Найти билеты</Submit>
+              </Block>
+            </Form>
+          </div>
+        </div>
+      </div>
+    </Header>
   );
 };
