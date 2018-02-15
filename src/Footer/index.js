@@ -9,19 +9,18 @@ import googleplay from "./googleplay.svg";
 import windowsphone from "./windowsphone.svg";
 import {
   Footer,
-  Flex,
+  FlexWrap,
+  FlexWrapNext,
   AppFlex,
   HalfWrap,
   Title,
-  Text,
   Copyright,
-  Social,
   AppText,
   Link,
   Line,
   Img,
   AppImg
-} from "./styledfooter";
+} from "./styled";
 
 export default function() {
   return (
@@ -29,7 +28,7 @@ export default function() {
       <div className="container">
         <div className="row">
           <div className="col-xs-12">
-            <Flex>
+            <FlexWrap>
               <HalfWrap>
                 <Title>СТРАНЫ</Title>
                 <Link>Россия</Link>
@@ -50,11 +49,11 @@ export default function() {
                 <Link>Лондон</Link>
                 <Link next>Все города →</Link>
               </HalfWrap>
-            </Flex>
+            </FlexWrap>
           </div>
 
           <div className="col-xs-12">
-            <Flex next>
+            <FlexWrapNext>
               <HalfWrap>
                 <Title>АВИАКОМПАНИИ</Title>
                 <Link>Air Berlin</Link>
@@ -75,11 +74,11 @@ export default function() {
                 <Link>Гамбург</Link>
                 <Link next>Все аэропорты →</Link>
               </HalfWrap>
-            </Flex>
+            </FlexWrapNext>
           </div>
 
           <div className="col-xs-12">
-            <Flex next>
+            <FlexWrapNext>
               <HalfWrap>
                 <Title>НАПРАВЛЕНИЯ</Title>
                 <Link>MOW – SIP</Link>
@@ -99,7 +98,7 @@ export default function() {
                 <Link>Блог</Link>
                 <Link>Помощь</Link>
               </HalfWrap>
-            </Flex>
+            </FlexWrapNext>
           </div>
 
           <div className="col-xs-12">
@@ -107,7 +106,7 @@ export default function() {
           </div>
 
           <div className="col-xs-12">
-            <Flex>
+            <FlexWrap>
               <Link footer>О компании</Link>
               <Link footer>Партнёрская программа</Link>
               <Link footer>Реклама</Link>
@@ -115,11 +114,11 @@ export default function() {
               <Link footer>Помощь</Link>
               <Link footer>Правила</Link>
               <Link footer>White Label авиабилеты</Link>
-            </Flex>
+            </FlexWrap>
           </div>
 
           <div className="col-xs-12">
-            <Flex>
+            <FlexWrap>
               <Link>
                 <Img src={vkontakte} alt="" title="" /> Вконтакте
               </Link>
@@ -135,7 +134,7 @@ export default function() {
               <Link>
                 <Img src={viber} alt="" title="" /> Вайбер
               </Link>
-            </Flex>
+            </FlexWrap>
           </div>
 
           <div className="col-xs-12">

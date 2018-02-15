@@ -1,5 +1,5 @@
 import React from "react";
-import { Section, Title, Text, Link, Img, Head } from "./styledfaq";
+import { Section, Title, Text, Link, Img, Head } from "./styled";
 import faq1 from "./faq1.png";
 import faq2 from "./faq2.png";
 import faq3 from "./faq3.png";

@@ -68,7 +68,6 @@ export const CityWrapper = styled.div`
 
 export const ImgCity = styled.img`
   width: 100%;
-  height: 176px;
   border-radius: 8px 8px 0 0;
 `;
 

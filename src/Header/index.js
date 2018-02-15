@@ -14,7 +14,7 @@ import {
   DateWrapper,
   Flexwrap,
   ChangeButton
-} from "./styledheader";
+} from "./styled";
 
 export default () => {
   return (

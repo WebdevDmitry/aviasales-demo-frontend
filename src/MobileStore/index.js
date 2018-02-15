@@ -2,12 +2,12 @@ import React from "react";
 import {
   Section,
   Title,
-  Flex,
-  Half,
+  FlexWrap,
+  RatingWrap,
   Img,
   Text,
   Download
-} from "./styledmobilestore";
+} from "./styled";
 import raiting from "./raiting.png";
 import iphone from "./iphone.png";
 import apple from "./apple.svg";
@@ -21,30 +21,31 @@ export default function() {
         <div className="row">
           <div className="col-xs-12">
             <Title>Скачай мобильное приложение Aviasales.ru</Title>
-            <Flex>
+            <RatingWrap>
               <Img src={raiting} alt="" title="" />
               <Text>Более 103 000 оценок</Text>
-            </Flex>
-            <Flex>
-              <Half>
+            </RatingWrap>
+            <FlexWrap>
+              <div className="col-xs-6">
                 <Img
                   src={iphone}
                   alt="Мобильное приложение Aviasales"
                   title="Мобильное приложение Aviasales"
                 />
-              </Half>
-              <Half>
-                <Download download>
+              </div>
+
+              <div className="col-xs-6">
+                <Download>
                   <Img src={apple} alt="" title="" />iPhone или iPad
                 </Download>
-                <Download download>
+                <Download>
                   <Img src={android} alt="" title="" />Android
                 </Download>
-                <Download download>
+                <Download>
                   <Img src={wf} alt="" title="" />Windows Phone
                 </Download>
-              </Half>
-            </Flex>
+              </div>
+            </FlexWrap>
           </div>
         </div>
       </div>

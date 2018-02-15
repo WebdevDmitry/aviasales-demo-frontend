@@ -15,7 +15,7 @@ import {
   Button,
   Link,
   SubText
-} from "./styledspecials";
+} from "./styled";
 import pobeda_logo from "./pobeda.png";
 import lufthansa_logo from "./lufthansa.png";
 

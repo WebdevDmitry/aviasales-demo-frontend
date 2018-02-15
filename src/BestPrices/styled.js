@@ -56,24 +56,33 @@ export const Country = styled.p`
   margin: 0;
 `;
 
-export const Parent = styled.div`
+export const OfferWrap = styled.div`
   display: flex;
   width: 100%;
   flex-wrap: wrap;
 `;
 
-export const Child = styled.div`
-  flex-basis: ${props => (props.left ? "60%" : "40%")};
+export const OfferLeft = styled.div`
+  flex-basis: 60%;
 `;
 
-export const Text = styled.p`
+export const OfferRight = styled.div`
+  flex-basis: 40%;
+`;
+
+export const OfferCity = styled.p`
   font-weight: normal;
   line-height: 20px;
   font-size: 16px;
-  color: ${props => (props.price ? "#00BAE8" : "#4A4A4A")};
-  text-align: ${props => (props.price ? "right" : "left")};
+  color: #4a4a4a;
+  text-align: left;
   margin: 0;
   padding: 10px 0;
+`;
+
+export const OfferPrice = OfferCity.extend`
+  color: #00bae8;
+  text-align: right;
 `;
 
 export const Info = styled.p`

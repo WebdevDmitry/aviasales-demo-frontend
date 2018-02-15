@@ -66,6 +66,7 @@ export const ChangeButton = styled.button`
   border: none;
   text-align: left;
   position: absolute;
+  outline: 0;
   &:hover {
     cursor: pointer;
   }

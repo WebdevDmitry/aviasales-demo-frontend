@@ -6,13 +6,17 @@ export const Footer = styled.footer`
   padding-bottom: 24px;
 `;
 
-export const Flex = styled.div`
+export const FlexWrap = styled.div`
   display: flex;
-  margin-top: ${props => (props.next ? "31px" : "0px")};
   flex-wrap: wrap;
+  margin-top: 0px;
 `;
 
-export const AppFlex = Flex.extend`
+export const FlexWrapNext = FlexWrap.extend`
+  margin-top: 31px;
+`;
+
+export const AppFlex = FlexWrap.extend`
   flex-direction: column;
   margin-top: 16px;
   align-items: center;

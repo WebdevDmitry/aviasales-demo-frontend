@@ -16,7 +16,7 @@ import {
   City,
   Description,
   Search
-} from "./styledpopular";
+} from "./styled";
 import compas from "./compas.svg";
 import pen from "./pen.svg";
 import city1 from "./city1.png";

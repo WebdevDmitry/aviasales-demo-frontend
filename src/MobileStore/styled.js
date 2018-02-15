@@ -14,14 +14,16 @@ export const Title = styled.h3`
   margin-bottom: 20px;
 `;
 
-export const Flex = styled.div`
+export const RatingWrap = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
-export const Half = styled.div`
-  flex-basis: 50%;
+export const FlexWrap = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Img = styled.img`
@@ -33,7 +35,7 @@ export const Text = styled.p`
   line-height: ${props => (props.list ? "24px" : "20px")};
   font-size: 14px;
   color: #ffffff;
-  margin: ${props => (props.download ? "0px 0px 20px 0px" : "0")};
+  margin: 0;
   display: flex;
   align-items: center;
 `;
@@ -43,7 +45,7 @@ export const Download = styled.button`
   line-height: ${props => (props.list ? "24px" : "20px")};
   font-size: 14px;
   color: #ffffff;
-  margin: ${props => (props.download ? "0px 0px 20px 0px" : "0")};
+  margin: 0px 0px 20px 0px;
   display: flex;
   align-items: center;
   background: none;
