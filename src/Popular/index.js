@@ -22,12 +22,12 @@ import {
   Flag
 } from "./styled";
 import compas from "./compas.svg";
-import city_1 from "./city-1.png";
-import city_2 from "./city-2.png";
-import city_3 from "./city-3.png";
-import city_4 from "./city-4.png";
-import city_5 from "./city-5.png";
-import city_6 from "./city-6.png";
+import krasnodar from "./krasnodar.jpg";
+import adler from "./adler.jpg";
+import s_p from "./s-p.jpg";
+import m_v from "./m-v.jpg";
+import simf from "./simf.jpg";
+import barca from "./barca.jpg";
 import button_1 from "./button-1.svg";
 import button_2 from "./button-2.svg";
 import button_3 from "./button-3.svg";
@@ -106,7 +106,7 @@ export default () => {
           <div className="row center-md">
             <div className="col-xs-12 col-md-10 col-lg-5">
               <CityCard>
-                <ImgCity src={city_1} alt="Краснодар" title="Краснодар" />
+                <ImgCity src={krasnodar} alt="Краснодар" title="Краснодар" />
                 <Info>
                   <PopularDestination>
                     <Flag src={flag_rus} alt="" title="" />
@@ -124,7 +124,7 @@ export default () => {
             </div>
             <div className="col-xs-12 col-md-10 col-lg-5">
               <CityCard>
-                <ImgCity src={city_2} alt="Сочи (Адлер)" title="Сочи (Адлер)" />
+                <ImgCity src={adler} alt="Сочи (Адлер)" title="Сочи (Адлер)" />
                 <Info>
                   <PopularDestination>
                     <Flag src={flag_rus} alt="" title="" />
@@ -143,7 +143,7 @@ export default () => {
             <div className="col-xs-12 col-md-10 col-lg-5">
               <CityCard>
                 <ImgCity
-                  src={city_3}
+                  src={s_p}
                   alt="Санкт-Петербург"
                   title="Санкт-Петербург"
                 />
@@ -165,7 +165,7 @@ export default () => {
             <div className="col-xs-12 col-md-10 col-lg-5">
               <CityCard>
                 <ImgCity
-                  src={city_4}
+                  src={m_v}
                   alt="Минеральные Воды"
                   title="Минеральные Воды"
                 />
@@ -187,7 +187,7 @@ export default () => {
             <div className="col-xs-12 col-md-10 col-lg-5">
               <CityCard>
                 <ImgCity
-                  src={city_5}
+                  src={simf}
                   alt="Симферополь (Крым)"
                   title="Симферополь (Крым)"
                 />
@@ -208,7 +208,7 @@ export default () => {
             </div>
             <div className="col-xs-12 col-md-10 col-lg-5">
               <CityCard>
-                <ImgCity src={city_6} alt="Барселона" title="Барселона" />
+                <ImgCity src={barca} alt="Барселона" title="Барселона" />
                 <Info>
                   <PopularDestination>
                     <Flag src={flag_esp} alt="" title="" />

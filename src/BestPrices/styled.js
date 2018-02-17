@@ -25,6 +25,9 @@ export const Title = styled.p`
 export const Line = styled.div`
   height: 0.5px;
   border: 0.5px dashed #afbec6;
+  @media (min-width: 992px) {
+    display: none;
+  }
 `;
 
 export const CheapOffer = styled.div`
