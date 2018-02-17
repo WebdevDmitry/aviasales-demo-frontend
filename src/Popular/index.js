@@ -1,181 +1,232 @@
 import React from "react";
 import {
-  Container,
+  Popular,
   Compas,
   PopularLabel,
   PopularLabelCity,
   Pen,
-  Wrapper,
-  ButtonWrapper,
-  Button,
-  CityWrapper,
+  PopularTitle,
+  TravelTypes,
+  TypeOfTravel,
+  ImgCircle,
+  PopularDestinations,
   ImgCity,
   CityCard,
   Info,
-  HalfWrap,
+  PopularDestination,
+  PriceAndDate,
   City,
-  Description,
-  Search
+  TravelCountry,
+  TravelDate,
+  Search,
+  Flag
 } from "./styled";
 import compas from "./compas.svg";
-import pen from "./pen.svg";
-import city1 from "./city1.png";
-import city2 from "./city2.png";
-import city3 from "./city3.png";
-import city4 from "./city4.png";
-import city5 from "./city5.png";
-import city6 from "./city6.png";
-import button1 from "./button1.svg";
-import button2 from "./button2.svg";
-import button3 from "./button3.svg";
-import button4 from "./button4.svg";
-import button5 from "./button5.svg";
-import button6 from "./button6.svg";
+import city_1 from "./city-1.png";
+import city_2 from "./city-2.png";
+import city_3 from "./city-3.png";
+import city_4 from "./city-4.png";
+import city_5 from "./city-5.png";
+import city_6 from "./city-6.png";
+import button_1 from "./button-1.svg";
+import button_2 from "./button-2.svg";
+import button_3 from "./button-3.svg";
+import button_4 from "./button-4.svg";
+import button_5 from "./button-5.svg";
+import button_6 from "./button-6.svg";
+import flag_rus from "./flag-rus.png";
+import flag_esp from "./flag-spain.png";
 
 export default () => {
   return (
-    <Container>
-      <Wrapper>
+    <Popular>
+      <PopularTitle>
         <Compas src={compas} />
         <PopularLabel>
-          Популярные направления перелетов из города <br />
+          Популярные направления перелетов<br /> из города&nbsp;
           <PopularLabelCity href="#">
-            Москва <Pen src={pen} />
+            Москва <Pen />
           </PopularLabelCity>
         </PopularLabel>
-      </Wrapper>
-      <ButtonWrapper>
-        <Button>
-          <img src={button1} alt="" />
-          КУДА<br />УГОДНО
-        </Button>
-        <Button>
-          <img src={button2} alt="" />СОЛНЦЕ<br />И МОРЕ
-        </Button>
-        <Button>
-          <img src={button3} alt="" />ШОПИНГ,<br />ГОРОД
-        </Button>
-      </ButtonWrapper>
-      <ButtonWrapper>
-        <Button>
-          <img src={button4} alt="" />КУЛЬТУРА<br />И ИСТОРИЯ
-        </Button>
-        <Button>
-          <img src={button5} alt="" />НОЧНАЯ<br />ЖИЗНЬ
-        </Button>
-        <Button>
-          <img src={button6} alt="" />ОТДЫХ<br /> С ДЕТЬМИ
-        </Button>
-      </ButtonWrapper>
-      <CityWrapper>
+      </PopularTitle>
+      <TravelTypes>
+        <div className="row">
+          <div className="col-xs-4 col-md-2">
+            <TypeOfTravel>
+              <ImgCircle>
+                <img src={button_1} alt="" />
+              </ImgCircle>
+              КУДА<br />УГОДНО
+            </TypeOfTravel>
+          </div>
+          <div className="col-xs-4 col-md-2 col-lg-2">
+            <TypeOfTravel>
+              <ImgCircle>
+                <img src={button_2} alt="" />
+              </ImgCircle>
+              СОЛНЦЕ<br />И МОРЕ
+            </TypeOfTravel>
+          </div>
+          <div className="col-xs-4 col-md-2 col-lg-2">
+            <TypeOfTravel>
+              <ImgCircle>
+                <img src={button_3} alt="" />
+              </ImgCircle>
+              ШОПИНГ,<br />ГОРОД
+            </TypeOfTravel>
+          </div>
+          <div className="col-xs-4 col-md-2 col-lg-2">
+            <TypeOfTravel>
+              <ImgCircle>
+                <img src={button_4} alt="" />
+              </ImgCircle>
+              КУЛЬТУРА<br />ИСТОРИЯ
+            </TypeOfTravel>
+          </div>
+          <div className="col-xs-4 col-md-2 col-lg-2">
+            <TypeOfTravel>
+              <ImgCircle>
+                <img src={button_5} alt="" />
+              </ImgCircle>
+              НОЧНАЯ<br />ЖИЗНЬ
+            </TypeOfTravel>
+          </div>
+          <div className="col-xs-4 col-md-2 col-lg-2">
+            <TypeOfTravel>
+              <ImgCircle>
+                <img src={button_6} alt="" />
+              </ImgCircle>
+              ОТДЫХ<br />С ДЕТЬМИ
+            </TypeOfTravel>
+          </div>
+        </div>
+      </TravelTypes>
+      <PopularDestinations>
         <div className="container">
-          <div className="row">
-            <div className="col-xs-12">
+          <div className="row center-md">
+            <div className="col-xs-12 col-md-10 col-lg-5">
               <CityCard>
-                <ImgCity src={city1} alt="Краснодар" title="Краснодар" />
+                <ImgCity src={city_1} alt="Краснодар" title="Краснодар" />
                 <Info>
-                  <HalfWrap>
-                    <City>Краснодар</City>
-                    <Description>РОССИЯ</Description>
-                  </HalfWrap>
-                  <HalfWrap right>
+                  <PopularDestination>
+                    <Flag src={flag_rus} alt="" title="" />
+                    <City>
+                      Краснодар<br />
+                      <TravelCountry>РОССИЯ</TravelCountry>
+                    </City>
+                  </PopularDestination>
+                  <PriceAndDate>
                     <Search href="#">Найти от 1 212 ₽</Search>
-                    <Description right>18 марта</Description>
-                  </HalfWrap>
+                    <TravelDate>18 марта</TravelDate>
+                  </PriceAndDate>
                 </Info>
               </CityCard>
             </div>
-            <div className="col-xs-12">
+            <div className="col-xs-12 col-md-10 col-lg-5">
               <CityCard>
-                <ImgCity src={city2} alt="Сочи (Адлер)" title="Сочи (Адлер)" />
+                <ImgCity src={city_2} alt="Сочи (Адлер)" title="Сочи (Адлер)" />
                 <Info>
-                  <HalfWrap>
-                    <City>Сочи (Адлер)</City>
-                    <Description>РОССИЯ</Description>
-                  </HalfWrap>
-                  <HalfWrap right>
+                  <PopularDestination>
+                    <Flag src={flag_rus} alt="" title="" />
+                    <City>
+                      Сочи (Адлер)<br />
+                      <TravelCountry>РОССИЯ</TravelCountry>
+                    </City>
+                  </PopularDestination>
+                  <PriceAndDate>
                     <Search href="#">Найти от 1 334 ₽</Search>
-                    <Description right>27 марта</Description>
-                  </HalfWrap>
+                    <TravelDate>27 марта</TravelDate>
+                  </PriceAndDate>
                 </Info>
               </CityCard>
             </div>
-            <div className="col-xs-12">
+            <div className="col-xs-12 col-md-10 col-lg-5">
               <CityCard>
                 <ImgCity
-                  src={city3}
+                  src={city_3}
                   alt="Санкт-Петербург"
                   title="Санкт-Петербург"
                 />
                 <Info>
-                  <HalfWrap>
-                    Wrap
-                    <City>Санкт-Петербург</City>
-                    <Description>РОССИЯ</Description>
-                  </HalfWrap>
-                  <HalfWrap right>
+                  <PopularDestination>
+                    <Flag src={flag_rus} alt="" title="" />
+                    <City>
+                      Санкт-Петербург<br />
+                      <TravelCountry>РОССИЯ</TravelCountry>
+                    </City>
+                  </PopularDestination>
+                  <PriceAndDate>
                     <Search href="#">Найти от 1 508 ₽</Search>
-                    <Description right>19 февраля</Description>
-                  </HalfWrap>
+                    <TravelDate>19 февраля</TravelDate>
+                  </PriceAndDate>
                 </Info>
               </CityCard>
             </div>
-            <div className="col-xs-12">
+            <div className="col-xs-12 col-md-10 col-lg-5">
               <CityCard>
                 <ImgCity
-                  src={city4}
+                  src={city_4}
                   alt="Минеральные Воды"
                   title="Минеральные Воды"
                 />
                 <Info>
-                  <HalfWrap>
-                    <City>Минеральные Воды</City>
-                    <Description>РОССИЯ</Description>
-                  </HalfWrap>
-                  <HalfWrap right>
+                  <PopularDestination>
+                    <Flag src={flag_rus} alt="" title="" />
+                    <City>
+                      Минеральные Воды<br />
+                      <TravelCountry>РОССИЯ</TravelCountry>
+                    </City>
+                  </PopularDestination>
+                  <PriceAndDate>
                     <Search href="#">Найти от 2 074 ₽</Search>
-                    <Description right>13 марта</Description>
-                  </HalfWrap>
+                    <TravelDate>13 марта</TravelDate>
+                  </PriceAndDate>
                 </Info>
               </CityCard>
             </div>
-            <div className="col-xs-12">
+            <div className="col-xs-12 col-md-10 col-lg-5">
               <CityCard>
                 <ImgCity
-                  src={city5}
+                  src={city_5}
                   alt="Симферополь (Крым)"
                   title="Симферополь (Крым)"
                 />
                 <Info>
-                  <HalfWrap>
-                    <City>Симферополь (Крым)</City>
-                    <Description>КРЫМ</Description>
-                  </HalfWrap>
-                  <HalfWrap right>
+                  <PopularDestination>
+                    <Flag src={flag_rus} alt="" title="" />
+                    <City>
+                      Симферополь (Крым)<br />
+                      <TravelCountry>КРЫМ</TravelCountry>
+                    </City>
+                  </PopularDestination>
+                  <PriceAndDate>
                     <Search href="#">Найти от 2 407 ₽</Search>
-                    <Description right>13 марта</Description>
-                  </HalfWrap>
+                    <TravelDate>13 марта</TravelDate>
+                  </PriceAndDate>
                 </Info>
               </CityCard>
             </div>
-            <div className="col-xs-12">
+            <div className="col-xs-12 col-md-10 col-lg-5">
               <CityCard>
-                <ImgCity src={city6} alt="Барселона" title="Барселона" />
+                <ImgCity src={city_6} alt="Барселона" title="Барселона" />
                 <Info>
-                  <HalfWrap>
-                    <City>Барселона</City>
-                    <Description>ИСПАНИЯ</Description>
-                  </HalfWrap>
-                  <HalfWrap right>
+                  <PopularDestination>
+                    <Flag src={flag_esp} alt="" title="" />
+                    <City>
+                      Барселона<br />
+                      <TravelCountry>ИСПАНИЯ</TravelCountry>
+                    </City>
+                  </PopularDestination>
+                  <PriceAndDate>
                     <Search href="#">Найти от 4 247 ₽</Search>
-                    <Description right>24 марта</Description>
-                  </HalfWrap>
+                    <TravelDate>24 марта</TravelDate>
+                  </PriceAndDate>
                 </Info>
               </CityCard>
             </div>
           </div>
         </div>
-      </CityWrapper>
-    </Container>
+      </PopularDestinations>
+    </Popular>
   );
 };

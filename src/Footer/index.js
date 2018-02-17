@@ -9,17 +9,25 @@ import googleplay from "./googleplay.svg";
 import windowsphone from "./windowsphone.svg";
 import {
   Footer,
-  FlexWrap,
-  FlexWrapNext,
-  AppFlex,
-  HalfWrap,
+  Countries,
+  Cities,
+  Airlines,
+  Airports,
+  Routes,
+  Services,
   Title,
   Copyright,
   AppText,
   Link,
   Line,
   Img,
-  AppImg
+  AppImg,
+  CountriesCities,
+  AirlinesAirports,
+  RoutesServices,
+  Links,
+  SocialNetworks,
+  WebStores
 } from "./styled";
 
 export default function() {
@@ -27,9 +35,9 @@ export default function() {
     <Footer>
       <div className="container">
         <div className="row">
-          <div className="col-xs-12">
-            <FlexWrap>
-              <HalfWrap>
+          <div className="col-xs-12 col-md-6 col-lg-4">
+            <CountriesCities>
+              <Countries>
                 <Title>СТРАНЫ</Title>
                 <Link>Россия</Link>
                 <Link>Таиланд</Link>
@@ -38,8 +46,8 @@ export default function() {
                 <Link>Болгария</Link>
                 <Link>Грузия</Link>
                 <Link next>Все страны →</Link>
-              </HalfWrap>
-              <HalfWrap>
+              </Countries>
+              <Cities>
                 <Title>ГОРОДА</Title>
                 <Link>Москва</Link>
                 <Link>Санкт-Петербург</Link>
@@ -48,13 +56,13 @@ export default function() {
                 <Link>Екатеринбург</Link>
                 <Link>Лондон</Link>
                 <Link next>Все города →</Link>
-              </HalfWrap>
-            </FlexWrap>
+              </Cities>
+            </CountriesCities>
           </div>
 
-          <div className="col-xs-12">
-            <FlexWrapNext>
-              <HalfWrap>
+          <div className="col-xs-12 col-md-6 col-lg-4">
+            <AirlinesAirports>
+              <Airlines>
                 <Title>АВИАКОМПАНИИ</Title>
                 <Link>Air Berlin</Link>
                 <Link>Air France</Link>
@@ -63,8 +71,8 @@ export default function() {
                 <Link>Emirates</Link>
                 <Link>KLM</Link>
                 <Link next>Все авиакомпании →</Link>
-              </HalfWrap>
-              <HalfWrap>
+              </Airlines>
+              <Airports>
                 <Title>АЭРОПОРТЫ</Title>
                 <Link>Шереметьево</Link>
                 <Link>Курумоч</Link>
@@ -73,13 +81,13 @@ export default function() {
                 <Link>Владивосток</Link>
                 <Link>Гамбург</Link>
                 <Link next>Все аэропорты →</Link>
-              </HalfWrap>
-            </FlexWrapNext>
+              </Airports>
+            </AirlinesAirports>
           </div>
 
-          <div className="col-xs-12">
-            <FlexWrapNext>
-              <HalfWrap>
+          <div className="col-xs-12 col-md-6 col-lg-4">
+            <RoutesServices>
+              <Routes>
                 <Title>НАПРАВЛЕНИЯ</Title>
                 <Link>MOW – SIP</Link>
                 <Link>MOW – AER</Link>
@@ -87,8 +95,8 @@ export default function() {
                 <Link>MOW – MRV</Link>
                 <Link>LED – MOW</Link>
                 <Link>MOW – BKK</Link>
-              </HalfWrap>
-              <HalfWrap>
+              </Routes>
+              <Services>
                 <Title>СЕРВИСЫ</Title>
                 <Link>Горящие авиабилеты</Link>
                 <Link>Календарь низких цен</Link>
@@ -97,28 +105,30 @@ export default function() {
                 <Link>Таблица цен</Link>
                 <Link>Блог</Link>
                 <Link>Помощь</Link>
-              </HalfWrap>
-            </FlexWrapNext>
+              </Services>
+            </RoutesServices>
+          </div>
+        </div>
+      </div>
+
+      <Line />
+
+      <div className="container">
+        <div className="row">
+          <div className="col-xs-12">
+            <Links>
+              <Link>О компании</Link>
+              <Link>Партнёрская программа</Link>
+              <Link>Реклама</Link>
+              <Link>Вакансии</Link>
+              <Link>Помощь</Link>
+              <Link>Правила</Link>
+              <Link>White Label авиабилеты</Link>
+            </Links>
           </div>
 
           <div className="col-xs-12">
-            <Line />
-          </div>
-
-          <div className="col-xs-12">
-            <FlexWrap>
-              <Link footer>О компании</Link>
-              <Link footer>Партнёрская программа</Link>
-              <Link footer>Реклама</Link>
-              <Link footer>Вакансии</Link>
-              <Link footer>Помощь</Link>
-              <Link footer>Правила</Link>
-              <Link footer>White Label авиабилеты</Link>
-            </FlexWrap>
-          </div>
-
-          <div className="col-xs-12">
-            <FlexWrap>
+            <SocialNetworks>
               <Link>
                 <Img src={vkontakte} alt="" title="" /> Вконтакте
               </Link>
@@ -134,12 +144,12 @@ export default function() {
               <Link>
                 <Img src={viber} alt="" title="" /> Вайбер
               </Link>
-            </FlexWrap>
+            </SocialNetworks>
           </div>
 
           <div className="col-xs-12">
             <AppText>Поиск и бронирование отелей</AppText>
-            <AppFlex>
+            <WebStores>
               <AppImg>
                 <Img footer src={appstore} alt="" title="" />
               </AppImg>
@@ -149,7 +159,7 @@ export default function() {
               <AppImg>
                 <Img footer src={windowsphone} alt="" title="" />
               </AppImg>
-            </AppFlex>
+            </WebStores>
           </div>
 
           <div className="col-xs-12">

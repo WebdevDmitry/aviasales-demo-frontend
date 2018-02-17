@@ -8,13 +8,10 @@ import {
   Img,
   Title,
   Line,
-  Block,
+  CheapOffer,
   Flag,
   City,
-  OfferWrap,
-  OfferRight,
   Offer,
-  OfferLeft,
   OfferCity,
   OfferPrice,
   Info,
@@ -32,165 +29,101 @@ export default function() {
             <Img src={calendar} alt="" title="" />
             <Title>Лучшие цены на авиабилеты за последний месяц</Title>
           </div>
-
-          <div className="col-xs-12">
-            <Block first>
+          <div className="col-xs-12 col-lg-offset-1 col-lg-3">
+            <CheapOffer>
               <Flag src={flag_ru} alt="КРЫМ" title="КРЫМ" />
               <City>
                 Симферополь (Крым)<br />
                 <Country>КРЫМ</Country>
               </City>
-              <OfferWrap>
+              <Offer>
                 <Button>
-                  <OfferLeft>
-                    <OfferCity>Из Москвы</OfferCity>
-                  </OfferLeft>
-                  <OfferRight>
-                    <OfferPrice>от 4 813 ₽</OfferPrice>
-                  </OfferRight>
+                  <OfferCity>Из Москвы</OfferCity>
+                  <OfferPrice>от 4 813 ₽</OfferPrice>
                 </Button>
                 <Button>
-                  <OfferLeft>
-                    <OfferCity>Из Санкт-Петербурга</OfferCity>
-                  </OfferLeft>
-                  <OfferRight>
-                    <OfferPrice>от 7 857 ₽</OfferPrice>
-                  </OfferRight>
+                  <OfferCity>Из Санкт-Петербурга</OfferCity>
+                  <OfferPrice>от 7 857 ₽</OfferPrice>
                 </Button>
                 <Button>
-                  <OfferLeft>
-                    <OfferCity>Из Новосибирска</OfferCity>
-                  </OfferLeft>
-                  <OfferRight>
-                    <OfferPrice>от 15 127 ₽</OfferPrice>
-                  </OfferRight>
+                  <OfferCity>Из Новосибирска</OfferCity>
+                  <OfferPrice>от 15 127 ₽</OfferPrice>
                 </Button>
                 <Button>
-                  <OfferLeft>
-                    <OfferCity>Из Екатеринбурга</OfferCity>
-                  </OfferLeft>
-                  <OfferRight>
-                    <OfferPrice>от 9 275 ₽</OfferPrice>
-                  </OfferRight>
+                  <OfferCity>Из Екатеринбурга</OfferCity>
+                  <OfferPrice>от 9 275 ₽</OfferPrice>
                 </Button>
                 <Button>
-                  <OfferLeft>
-                    <OfferCity>Из Челябинска</OfferCity>
-                  </OfferLeft>
-                  <OfferRight>
-                    <OfferPrice>от 9 148 ₽</OfferPrice>
-                  </OfferRight>
+                  <OfferCity>Из Челябинска</OfferCity>
+                  <OfferPrice>от 9 148 ₽</OfferPrice>
                 </Button>
-              </OfferWrap>
-            </Block>
+              </Offer>
+            </CheapOffer>
             <Line />
           </div>
-
-          <div className="col-xs-12">
-            <Block first>
+          <div className="col-xs-12 col-lg-4">
+            <CheapOffer>
               <Flag src={flag_am} alt="АРМЕНИЯ" title="АРМЕНИЯ" />
               <City>
                 Ереван<br />
                 <Country>АРМЕНИЯ</Country>
               </City>
-              <OfferWrap>
+              <Offer>
                 <Button>
-                  <OfferLeft>
-                    <OfferCity>Из Москвы</OfferCity>
-                  </OfferLeft>
-                  <OfferRight>
-                    <OfferPrice>от 6 758 ₽</OfferPrice>
-                  </OfferRight>
+                  <OfferCity>Из Москвы</OfferCity>
+                  <OfferPrice>от 6 758 ₽</OfferPrice>
                 </Button>
                 <Button>
-                  <OfferLeft>
-                    <OfferCity>Из Санкт-Петербурга</OfferCity>
-                  </OfferLeft>
-                  <OfferRight>
-                    <OfferPrice>от 9 932 ₽</OfferPrice>
-                  </OfferRight>
+                  <OfferCity>Из Санкт-Петербурга</OfferCity>
+                  <OfferPrice>от 9 932 ₽</OfferPrice>
                 </Button>
                 <Button>
-                  <OfferLeft>
-                    <OfferCity>Из Сочи</OfferCity>
-                  </OfferLeft>
-                  <OfferRight>
-                    <OfferPrice>от 11 951 ₽</OfferPrice>
-                  </OfferRight>
+                  <OfferCity>Из Сочи</OfferCity>
+                  <OfferPrice>от 11 951 ₽</OfferPrice>
                 </Button>
                 <Button>
-                  <OfferLeft>
-                    <OfferCity>Из Краснодара</OfferCity>
-                  </OfferLeft>
-                  <OfferRight>
-                    <OfferPrice>от 11 741 ₽</OfferPrice>
-                  </OfferRight>
+                  <OfferCity>Из Краснодара</OfferCity>
+                  <OfferPrice>от 11 741 ₽</OfferPrice>
                 </Button>
                 <Button>
-                  <OfferLeft>
-                    <OfferCity>Из Ростова-на-Дону</OfferCity>
-                  </OfferLeft>
-                  <OfferRight>
-                    <OfferPrice>от 11 956 ₽</OfferPrice>
-                  </OfferRight>
+                  <OfferCity>Из Ростова-на-Дону</OfferCity>
+                  <OfferPrice>от 11 956 ₽</OfferPrice>
                 </Button>
-              </OfferWrap>
-            </Block>
+              </Offer>
+            </CheapOffer>
             <Line />
           </div>
-
-          <div className="col-xs-12">
-            <Block first>
+          <div className="col-xs-12 col-lg-3">
+            <CheapOffer>
               <Flag src={flag_mo} alt="МОЛДАВИЯ" title="МОЛДАВИЯ" />
               <City>
                 Кишинёв<br />
                 <Country>МОЛДАВИЯ</Country>
               </City>
-              <OfferWrap>
+              <Offer>
                 <Button>
-                  <OfferLeft>
-                    <OfferCity>Из Москвы</OfferCity>
-                  </OfferLeft>
-                  <OfferRight>
-                    <OfferPrice>от 8 319 ₽</OfferPrice>
-                  </OfferRight>
+                  <OfferCity>Из Москвы</OfferCity>
+                  <OfferPrice>от 8 319 ₽</OfferPrice>
                 </Button>
                 <Button>
-                  <OfferLeft>
-                    <OfferCity>Из Санкт-Петербурга</OfferCity>
-                  </OfferLeft>
-                  <OfferRight>
-                    <OfferPrice>от 10 800 ₽</OfferPrice>
-                  </OfferRight>
+                  <OfferCity>Из Санкт-Петербурга</OfferCity>
+                  <OfferPrice>от 10 800 ₽</OfferPrice>
                 </Button>
                 <Button>
-                  <OfferLeft>
-                    <OfferCity>Из Краснодара</OfferCity>
-                  </OfferLeft>
-                  <OfferRight>
-                    <OfferPrice>от 12 098 ₽</OfferPrice>
-                  </OfferRight>
+                  <OfferCity>Из Краснодара</OfferCity>
+                  <OfferPrice>от 12 098 ₽</OfferPrice>
                 </Button>
                 <Button>
-                  <OfferLeft>
-                    <OfferCity>Из Сургута</OfferCity>
-                  </OfferLeft>
-                  <OfferRight>
-                    <OfferPrice>от 16 277 ₽</OfferPrice>
-                  </OfferRight>
+                  <OfferCity>Из Сургута</OfferCity>
+                  <OfferPrice>от 16 277 ₽</OfferPrice>
                 </Button>
                 <Button>
-                  <OfferLeft>
-                    <OfferCity>Из Нового Уренгоя</OfferCity>
-                  </OfferLeft>
-                  <OfferRight>
-                    <OfferPrice>от 15 987 ₽</OfferPrice>
-                  </OfferRight>
+                  <OfferCity>Из Нового Уренгоя</OfferCity>
+                  <OfferPrice>от 15 987 ₽</OfferPrice>
                 </Button>
-              </OfferWrap>
-            </Block>
+              </Offer>
+            </CheapOffer>
           </div>
-
           <div className="col-xs-12">
             <Info>
               Мы знаем, где купить авиабилеты дешево. Билеты на самолет в 220
@@ -198,8 +131,8 @@ export default function() {
               и 728 авиакомпаний.
             </Info>
             <Description>
-              Цены, найденные пользователями<br />за последние 48 часов, не
-              являются офертой.
+              Цены, найденные пользователями за последние 48 часов, не являются
+              офертой.
             </Description>
           </div>
         </div>

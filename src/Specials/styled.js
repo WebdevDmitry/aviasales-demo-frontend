@@ -16,7 +16,18 @@ export const Title = styled.h4`
 
 export const Card = styled.div`
   min-height: 270px;
-  margin-top: ${props => (props.first ? "24px" : "12px")};
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: 992px) {
+    max-width: auto;
+  }
+`;
+
+export const MiddleCard = Card.extend`
+  @media (min-width: 992px) {
+    max-width: 280px;
+  }
 `;
 
 export const Name = styled.div`
@@ -25,7 +36,24 @@ export const Name = styled.div`
   line-height: 20px;
   font-size: 16px;
   padding: 22px 82px 22px 16px;
+  @media (min-width: 768px) {
+    padding-right: 55px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 `;
+
+export const SpecialOfferCity = styled.div`
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 8px;
+  background: #cd2027;
+`;
+
+export const LabelImage = styled.img``;
 
 export const Info = styled.div`
   background: #fff;
@@ -39,6 +67,9 @@ export const Info = styled.div`
 export const Img = styled.img`
   width: 122px;
   margin-top: 22px;
+  @media (min-width: 768px) {
+    width: 100px;
+  }
 `;
 
 export const Price = styled.p`
@@ -50,8 +81,11 @@ export const Price = styled.p`
   margin: 18px 0 0 0;
 `;
 
-export const Span = styled.span`
+export const Hightlight = styled.span`
   font-size: 16px;
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 export const Countdown = styled.p`
@@ -63,12 +97,12 @@ export const Countdown = styled.p`
   margin: 10px 0 0 0;
 `;
 
-export const Parent = styled.div`
+export const Company = styled.div`
   display: flex;
   width: 100%;
 `;
 
-export const HalfWrap = styled.div`
+export const AircompanyOffer = styled.div`
   flex-basis: 50%;
   padding-right: 8px;
 `;
@@ -81,6 +115,14 @@ export const Description = styled.p`
   margin-top: 17px;
 `;
 
+export const Block = styled.div`
+  margin-top: 32px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+`;
+
 export const Button = styled.button`
   background: rgba(0, 0, 0, 0.0001);
   border: 2px solid #cd1f27;
@@ -91,12 +133,15 @@ export const Button = styled.button`
   color: #d93533;
   margin-top: 27px;
   margin-bottom: 16px;
-  padding: 10px 92px;
+  padding: 10px 40px;
   transition: 0.3s;
   &:hover {
     cursor: pointer;
     color: #ff9d1b;
     border-color: #ff9d1b;
+  }
+  @media (min-width: 768px) {
+    padding: 10px;
   }
 `;
 
@@ -106,18 +151,13 @@ export const Link = styled.a`
   font-size: 16px;
   text-decoration-line: underline;
   color: #ffffff;
-  margin-top: 32px;
   margin-bottom: 0px;
-  display: flex;
-  justify-content: center;
 `;
 
-export const SubText = styled.p`
+export const SubText = styled.span`
   font-weight: normal;
   line-height: 20px;
   font-size: 16px;
-  text-align: center;
   color: #ffffff;
-  margin-top: 8px;
   margin-bottom: 0px;
 `;

@@ -27,12 +27,12 @@ export const Line = styled.div`
   border: 0.5px dashed #afbec6;
 `;
 
-export const Block = styled.div`
+export const CheapOffer = styled.div`
   padding-bottom: 24px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: ${props => (props.first ? "40px" : "24px")};
+  margin-top: 40px;
 `;
 
 export const Flag = styled.img`
@@ -56,21 +56,13 @@ export const Country = styled.p`
   margin: 0;
 `;
 
-export const OfferWrap = styled.div`
+export const Offer = styled.div`
   display: flex;
   width: 100%;
   flex-wrap: wrap;
 `;
 
-export const OfferLeft = styled.div`
-  flex-basis: 60%;
-`;
-
-export const OfferRight = styled.div`
-  flex-basis: 40%;
-`;
-
-export const OfferCity = styled.p`
+export const OfferCity = styled.div`
   font-weight: normal;
   line-height: 20px;
   font-size: 16px;
@@ -78,11 +70,13 @@ export const OfferCity = styled.p`
   text-align: left;
   margin: 0;
   padding: 10px 0;
+  flex-basis: 60%;
 `;
 
 export const OfferPrice = OfferCity.extend`
   color: #00bae8;
   text-align: right;
+  flex-basis: 40%;
 `;
 
 export const Info = styled.p`

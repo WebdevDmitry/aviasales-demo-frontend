@@ -2,77 +2,67 @@ import React from "react";
 import logo from "./logo.svg";
 import {
   Header,
-  Title,
-  SubTitle,
-  TopBlock,
+  HomeLink,
   Logo,
-  LogoText,
-  Form,
-  ButtonsBlock,
-  Input,
-  Block,
+  Label,
+  FormTitle,
+  Title,
+  Subtitle,
+  SearchForm,
+  DepartureCity,
+  ArrivalCity,
+  DatePicker,
   DepartureDate,
   ArrivalDate,
-  Quantity,
-  Span,
-  Submit,
-  Airport,
-  AirportName,
-  Change
+  DropdownButton,
+  Input,
+  ArrivalAutocompleteData,
+  DepartureAutocompleteData,
+  RevertButton,
+  DateValue,
+  DropdownValue,
+  DropdownValueAdditional,
+  SearchTickets
 } from "./styled";
 
 export default () => {
   return (
     <Header>
       <div className="container">
-        <div className="row">
-          <div className="col-xs-12 col-md-12 col-lg-12">
-            <TopBlock>
-              <Logo src={logo} alt="Aviasales" title="Aviasales" />
-              <LogoText>aviasales</LogoText>
-            </TopBlock>
-          </div>
-          <div className="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
-            <Title>Поиск дешевых авиабилетов</Title>
-            <SubTitle>Лучший способ купить авиабилеты дешево</SubTitle>
-            <Form action="#" method="post">
-              <Airport>
-                <Input
-                  top
-                  type="text"
-                  name="from"
-                  placeholder="Укажите город"
-                  value="Москва"
-                />
-                <AirportName>MOW</AirportName>
-                <Change />
-              </Airport>
-              <Airport>
-                <Input
-                  greyText
-                  type="text"
-                  name="to"
-                  placeholder="Город прибытия"
-                  value=""
-                />
-              </Airport>
-              <ButtonsBlock>
-                <DepartureDate name="date-go" value="">
-                  Туда
-                </DepartureDate>
-                <ArrivalDate name="date-out" value="">
-                  Обратно
-                </ArrivalDate>
-              </ButtonsBlock>
-              <Quantity>
-                1 пассажир,&nbsp;<Span>эконом</Span>
-              </Quantity>
-              <Block>
-                <Submit type="submit">Найти билеты</Submit>
-              </Block>
-            </Form>
-          </div>
-        </div>
+        <HomeLink href="#">
+          <Logo src={logo} alt="Aviasales Logo" />
+          <Label>&nbsp;aviasales</Label>
+        </HomeLink>
+        <FormTitle>
+          <Title>Поиск дешевых авиабилетов</Title>
+          <Subtitle>Лучший способ купить авиабилеты дешево</Subtitle>
+        </FormTitle>
+        <SearchForm>
+          <DepartureCity>
+            <Input type="text" placeholder="Город вылета" />
+            <DepartureAutocompleteData>MOW</DepartureAutocompleteData>
+            <RevertButton />
+          </DepartureCity>
+          <ArrivalCity>
+            <Input type="text" placeholder="Город прибытия" />
+            <ArrivalAutocompleteData />
+          </ArrivalCity>
+          <DatePicker>
+            <DepartureDate>
+              <DateValue>Туда</DateValue>
+            </DepartureDate>
+            <ArrivalDate>
+              <DateValue>Обратно</DateValue>
+            </ArrivalDate>
+          </DatePicker>
+          <DropdownButton>
+            <DropdownValue>
+              1 пассажир,{" "}
+              <DropdownValueAdditional>эконом</DropdownValueAdditional>
+            </DropdownValue>
+          </DropdownButton>
+          <SearchTickets>Найти билеты</SearchTickets>
+        </SearchForm>
       </div>
     </Header>
   );

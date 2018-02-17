@@ -1,98 +1,117 @@
 import React from "react";
+import pobeda_logo from "./pobeda.png";
+import lufthansa_logo from "./lufthansa.png";
+import label from "./label.svg";
 import {
   Section,
   Title,
   Card,
+  MiddleCard,
   Name,
+  LabelImage,
+  SpecialOfferCity,
   Info,
   Img,
   Price,
-  Span,
+  Hightlight,
   Countdown,
-  Parent,
-  HalfWrap,
+  Company,
+  AircompanyOffer,
   Description,
+  Block,
   Button,
   Link,
   SubText
 } from "./styled";
-import pobeda_logo from "./pobeda.png";
-import lufthansa_logo from "./lufthansa.png";
 
 export default function() {
   return (
     <Section>
       <div className="container">
         <div className="row">
-          <div className="col-xs-12">
+          <div className="col-xs-12 col-lg-offset-1 col-lg-10">
             <Title>Спецпредложения на авиабилеты</Title>
+          </div>
 
+          <div className="col-xs-12 col-md-4 col-lg-offset-1 col-lg-3">
             <Card>
               <Name>Билеты от 499 рублей!</Name>
               <Info>
-                <Parent>
-                  <HalfWrap>
+                <Company>
+                  <AircompanyOffer>
                     <Img src={pobeda_logo} alt="Победа" title="Победа" />
-                  </HalfWrap>
-                  <HalfWrap>
+                  </AircompanyOffer>
+                  <AircompanyOffer>
                     <Price>
-                      от <Span>499 ₽</Span>
+                      от <Hightlight>499 ₽</Hightlight>
                     </Price>
                     <Countdown>Осталось 45 дней</Countdown>
-                  </HalfWrap>
-                </Parent>
+                  </AircompanyOffer>
+                </Company>
                 <Description>
                   Билеты от 499 рублей!<br />
-                  Специальное предложение от авиакомпании<br />Победа
+                  Специальное предложение от авиакомпании Победа
                 </Description>
                 <Button>Узнать подробности</Button>
               </Info>
             </Card>
+          </div>
 
-            <Card>
-              <Name>В Нью-Йорк от 20 680 ₽</Name>
+          <div className="col-xs-12 col-md-4 col-lg-4">
+            <MiddleCard>
+              <SpecialOfferCity>
+                <Name>В Нью-Йорк от 20 680 ₽</Name>
+                <LabelImage src={label} />
+              </SpecialOfferCity>
+
               <Info>
-                <Parent>
-                  <HalfWrap>
+                <Company>
+                  <AircompanyOffer>
                     <Img
                       src={lufthansa_logo}
                       alt="Lufthansa"
                       title="Lufthansa"
                     />
-                  </HalfWrap>
-                  <HalfWrap>
+                  </AircompanyOffer>
+                  <AircompanyOffer>
                     <Price>
-                      от <Span>20 680 ₽</Span>
+                      от <Hightlight>20 680 ₽</Hightlight>
                     </Price>
                     <Countdown>Осталось 19 дней</Countdown>
-                  </HalfWrap>
-                </Parent>
+                  </AircompanyOffer>
+                </Company>
                 <Description>
                   Из Москвы в США от 20680 рублей! Специальное предложение от
                   авиакомпании Lufthansa
                 </Description>
                 <Button>Узнать подробности</Button>
               </Info>
-            </Card>
+            </MiddleCard>
+          </div>
 
+          <div className="col-xs-12 col-md-4 col-lg-3">
             <Card>
-              <Name>В Лос-Анджелес от 22360 рублей!</Name>
+              <SpecialOfferCity>
+                <Name>В Лос-Анджелес от 22360 рублей!</Name>
+                <LabelImage src={label} />
+              </SpecialOfferCity>
+
               <Info>
-                <Parent>
-                  <HalfWrap>
+                <Company>
+                  <AircompanyOffer>
                     <Img
                       src={lufthansa_logo}
                       alt="Lufthansa"
                       title="Lufthansa"
                     />
-                  </HalfWrap>
-                  <HalfWrap>
+                  </AircompanyOffer>
+                  <AircompanyOffer>
                     <Price>
-                      от <Span>20 360 ₽</Span>
+                      от <Hightlight>20 360 ₽</Hightlight>
                     </Price>
                     <Countdown>Осталось 19 дней</Countdown>
-                  </HalfWrap>
-                </Parent>
+                  </AircompanyOffer>
+                </Company>
                 <Description>
                   Из Москвы в США от 22360 рублей! Специальное предложение от
                   авиакомпании Lufthansa
@@ -100,9 +119,13 @@ export default function() {
                 <Button>Узнать подробности</Button>
               </Info>
             </Card>
+          </div>
 
-            <Link href="#">Смотреть все спецпредложения</Link>
-            <SubText>* средняя цена по направлению</SubText>
+          <div className="col-xs-12 col-md-12 col-lg-offset-1 col-lg-10">
+            <Block>
+              <Link href="#">Смотреть все спецпредложения</Link>
+              <SubText>* средняя цена по направлению</SubText>
+            </Block>
           </div>
         </div>
       </div>

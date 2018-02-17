@@ -43,6 +43,6 @@ export const Img = styled.img`
   height: 16px;
 `;
 
-export const Head = styled.div`
+export const ArticleName = styled.div`
   display: flex;
 `;

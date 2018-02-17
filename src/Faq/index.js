@@ -1,8 +1,8 @@
 import React from "react";
-import { Section, Title, Text, Link, Img, Head } from "./styled";
-import faq1 from "./faq1.png";
-import faq2 from "./faq2.png";
-import faq3 from "./faq3.png";
+import { Section, Title, Text, Link, Img, ArticleName } from "./styled";
+import faq_1 from "./faq-1.png";
+import faq_2 from "./faq-2.png";
+import faq_3 from "./faq-3.png";
 
 export default function() {
   return (
@@ -10,10 +10,10 @@ export default function() {
       <div className="container">
         <div className="row">
           <div className="col-xs-12">
-            <Head>
-              <Img src={faq1} alt="" title="" />
+            <ArticleName>
+              <Img src={faq_1} alt="" title="" />
               <Title>КАК КУПИТЬ ДЕШЕВЫЕ АВИАБИЛЕТЫ?</Title>
-            </Head>
+            </ArticleName>
             <Text>
               Aviasales.ru — это метапоисковик авиабилетов. Мы ищем билеты на
               самолет по сотням авиакомпаний и находим за считанные минуты самые
@@ -30,10 +30,10 @@ export default function() {
           </div>
 
           <div className="col-xs-12">
-            <Head>
-              <Img src={faq2} alt="" title="" />
+            <ArticleName>
+              <Img src={faq_2} alt="" title="" />
               <Title>ЭЛЕКТРОННЫЙ АВИАБИЛЕТ</Title>
-            </Head>
+            </ArticleName>
             <Text>
               Электронный авиабилет — это, по сути, обычный билет на самолет, но
               только в менее привычном для путешественника виде. Вся информация
@@ -53,10 +53,10 @@ export default function() {
           </div>
 
           <div className="col-xs-12">
-            <Head>
-              <Img src={faq3} alt="" title="" />
+            <ArticleName>
+              <Img src={faq_3} alt="" title="" />
               <Title>20 СОВЕТОВ АВИАПУТЕШЕСТВЕННИКАМ</Title>
-            </Head>
+            </ArticleName>
             <Text>
               Есть масса путеводителей по странам, но ни одного о том, как
               провести время в самолете. Для того, чтобы сделать ваш перелет
