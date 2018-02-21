@@ -1,7 +1,7 @@
 import React from "react";
 import pobeda_logo from "./pobeda.png";
 import lufthansa_logo from "./lufthansa.png";
-import label from "./label.svg";
+import label from "./label.png";
 import {
   Section,
   Title,
@@ -18,7 +18,7 @@ import {
   Company,
   AircompanyOffer,
   Description,
-  Block,
+  SeeAllOffers,
   Button,
   Link,
   SubText
@@ -122,10 +122,10 @@ export default function() {
           </div>
 
           <div className="col-xs-12 col-md-12 col-lg-offset-1 col-lg-10">
-            <Block>
+            <SeeAllOffers>
               <Link href="#">Смотреть все спецпредложения</Link>
               <SubText>* средняя цена по направлению</SubText>
-            </Block>
+            </SeeAllOffers>
           </div>
         </div>
       </div>

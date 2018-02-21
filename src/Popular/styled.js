@@ -96,7 +96,7 @@ export const Img = styled.img`
   height: 22px;
 `;
 
-export const ImgCircle = styled.div`
+export const ImgTravel = styled.div`
   padding: 13px;
   background: #fff;
   border-radius: 50%;

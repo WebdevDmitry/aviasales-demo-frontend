@@ -30,7 +30,7 @@ export const MiddleCard = Card.extend`
   }
 `;
 
-export const Name = styled.div`
+export const Name = styled.section`
   background: #cd2027;
   color: #fff;
   line-height: 20px;
@@ -44,7 +44,7 @@ export const Name = styled.div`
   }
 `;
 
-export const SpecialOfferCity = styled.div`
+export const SpecialOfferCity = styled.section`
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -115,7 +115,7 @@ export const Description = styled.p`
   margin-top: 17px;
 `;
 
-export const Block = styled.div`
+export const SeeAllOffers = styled.section`
   margin-top: 32px;
   display: flex;
   flex-flow: row nowrap;

@@ -8,7 +8,7 @@ import {
   PopularTitle,
   TravelTypes,
   TypeOfTravel,
-  ImgCircle,
+  ImgTravel,
   PopularDestinations,
   ImgCity,
   CityCard,
@@ -53,49 +53,49 @@ export default () => {
         <div className="row">
           <div className="col-xs-4 col-md-2">
             <TypeOfTravel>
-              <ImgCircle>
+              <ImgTravel>
                 <img src={button_1} alt="" />
-              </ImgCircle>
+              </ImgTravel>
               КУДА<br />УГОДНО
             </TypeOfTravel>
           </div>
           <div className="col-xs-4 col-md-2 col-lg-2">
             <TypeOfTravel>
-              <ImgCircle>
+              <ImgTravel>
                 <img src={button_2} alt="" />
-              </ImgCircle>
+              </ImgTravel>
               СОЛНЦЕ<br />И МОРЕ
             </TypeOfTravel>
           </div>
           <div className="col-xs-4 col-md-2 col-lg-2">
             <TypeOfTravel>
-              <ImgCircle>
+              <ImgTravel>
                 <img src={button_3} alt="" />
-              </ImgCircle>
+              </ImgTravel>
               ШОПИНГ,<br />ГОРОД
             </TypeOfTravel>
           </div>
           <div className="col-xs-4 col-md-2 col-lg-2">
             <TypeOfTravel>
-              <ImgCircle>
+              <ImgTravel>
                 <img src={button_4} alt="" />
-              </ImgCircle>
+              </ImgTravel>
               КУЛЬТУРА<br />ИСТОРИЯ
             </TypeOfTravel>
           </div>
           <div className="col-xs-4 col-md-2 col-lg-2">
             <TypeOfTravel>
-              <ImgCircle>
+              <ImgTravel>
                 <img src={button_5} alt="" />
-              </ImgCircle>
+              </ImgTravel>
               НОЧНАЯ<br />ЖИЗНЬ
             </TypeOfTravel>
           </div>
           <div className="col-xs-4 col-md-2 col-lg-2">
             <TypeOfTravel>
-              <ImgCircle>
+              <ImgTravel>
                 <img src={button_6} alt="" />
-              </ImgCircle>
+              </ImgTravel>
               ОТДЫХ<br />С ДЕТЬМИ
             </TypeOfTravel>
           </div>

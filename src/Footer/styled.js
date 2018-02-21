@@ -75,9 +75,9 @@ export const Text = styled.p`
   line-height: 16px;
   font-size: 12px;
   color: #5b5b5c;
-  margin-top: ${props => (props.footer ? "0px" : "12px")};
-  margin-bottom: ${props => (props.footer ? "8px" : "0px")};
-  margin-right: ${props => (props.footer ? "12px" : "0px")};
+  margin-top: 12px;
+  margin-bottom: 0;
+  margin-right: 0;
 `;
 export const Copyright = Text.extend`
   text-align: center;
@@ -125,7 +125,7 @@ export const Line = styled.hr`
 `;
 
 export const Img = styled.img`
-  margin-right: ${props => (props.footer ? "0px" : "4px")};
+  margin-right: ${props => (props.webstore ? "0px" : "4px")};
 `;
 
 export const AppImg = styled.a`

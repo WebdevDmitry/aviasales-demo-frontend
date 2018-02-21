@@ -151,13 +151,13 @@ export default function() {
             <AppText>Поиск и бронирование отелей</AppText>
             <WebStores>
               <AppImg>
-                <Img footer src={appstore} alt="" title="" />
+                <Img webstore src={appstore} alt="" title="" />
               </AppImg>
               <AppImg>
-                <Img footer src={googleplay} alt="" title="" />
+                <Img webstore src={googleplay} alt="" title="" />
               </AppImg>
               <AppImg>
-                <Img footer src={windowsphone} alt="" title="" />
+                <Img webstore src={windowsphone} alt="" title="" />
               </AppImg>
             </WebStores>
           </div>
